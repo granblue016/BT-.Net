@@ -2,8 +2,8 @@
     <div class="row">
         <div class="col-4">
             <div class="card">
-                <img 
-                    src="{{member.photoUrl || './assets/user.png'}}" 
+                <img
+                    src="{{member.photoUrl || './assets/user.png'}}"
                     alt="{{member.knownAs}}"
                     class="card-img img-thumbnail"
                 >
@@ -33,6 +33,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-8">
             <tabset class="member-tabset">
                 <tab heading="About {{member.knownAs}}">
@@ -47,16 +48,19 @@
                 </tab>
                 <tab heading="Photos" #photoTab="tab">
                     @if (photoTab.active) {
-                        <gallery 
-                        [items]="images" 
-                        class="gallery"
+                        <gallery
+                            [items]="images"
+                            [itemAutosize]="true"
+                            class="gallery"
                     ></gallery>
                     }
+
                 </tab>
                 <tab heading="Messages">
                     <p>Messages will go here</p>
                 </tab>
             </tabset>
         </div>
+
     </div>
 }
