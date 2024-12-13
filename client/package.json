@@ -49,5 +49,10 @@
       "@angular/common": "$@angular/common",
       "@angular/core": "$@angular/core"
     }
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
